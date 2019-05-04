@@ -1,0 +1,23 @@
+<form [formGroup]="loginForm" >
+  <div>
+    <div>
+      <div>
+        <span>userName :</span>
+        <input type="text" formControlName="usernameOrEmail" placeholder="email">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <div>
+        <span>password:</span>
+        <input type="password"  formControlName="password" placeholder="password">
+      </div>
+    </div>
+  </div>
+  <input (click)="onSubmit()" type="submit">
+
+</form>
+
+
